@@ -338,3 +338,4 @@ C:\Users\diamo\OneDrive\Documents\GitHub\aff\aff-backend\bin\Debug\net9.0\Alpaca
 C:\Users\diamo\OneDrive\Documents\GitHub\aff\aff-backend\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\diamo\OneDrive\Documents\GitHub\aff\aff-backend\bin\Debug\net9.0\Polly.dll
 C:\Users\diamo\OneDrive\Documents\GitHub\aff\aff-backend\bin\Debug\net9.0\Polly.Core.dll
+C:\Users\diamo\OneDrive\Documents\GitHub\aff\aff-backend\obj\Debug\net9.0\aff-backend.sourcelink.json

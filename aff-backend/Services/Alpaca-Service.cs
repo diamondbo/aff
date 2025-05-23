@@ -10,6 +10,7 @@ public class AlpacaSettings
 public interface IAlpacaService
 {
     Task<Decimal?> GetBuyingPower();
+    Task<Decimal?> GetCash();
     Task<OrderResult?> MakeMarketOrder(string symbol, int quantity, bool isBuy);
 
 }
@@ -21,15 +22,32 @@ public class AlpacaService : IAlpacaService
     {
         _settings = settings.Value;
     }
+    private IAlpacaTradingClient CreateClient()
+    {
+        return Alpaca.Markets.Environments.Paper
+            .GetAlpacaTradingClient(new SecretKey(_settings.AlpacaKey, _settings.AlpacaSecret));
+    }
     public async Task<decimal?> GetBuyingPower()
     {
         try
         {
-            var client = Alpaca.Markets.Environments.Paper
-                .GetAlpacaTradingClient(new SecretKey(_settings.AlpacaKey, _settings.AlpacaSecret));
-
+            var client = CreateClient();
             var account = await client.GetAccountAsync();
             return account.BuyingPower;
+        }
+        catch (RestClientErrorException ex)
+        {
+            Console.WriteLine($"Alpaca API error: {ex.Message}");
+            throw;
+        }
+    }
+    public async Task<decimal?> GetCash()
+    {
+        try
+        {
+            var client = CreateClient();
+            var account = await client.GetAccountAsync();
+            return account.TradableCash;
         }
         catch (RestClientErrorException ex)
         {

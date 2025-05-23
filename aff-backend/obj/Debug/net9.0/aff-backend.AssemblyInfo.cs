@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aff-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfd492e9518cfb1a875ef87653b92f6f49837a0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("aff-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aff-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
