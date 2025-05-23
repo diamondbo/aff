@@ -1,0 +1,6 @@
+@aff_backend_HostAddress = http://localhost:5151
+
+GET {{aff_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

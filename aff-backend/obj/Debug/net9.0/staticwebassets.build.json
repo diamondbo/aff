@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "EvZMgWDgQopUm5xVC28s5/m0yqYTz26P+0F6AHyGIx8=",
+  "Source": "aff-backend",
+  "BasePath": "_content/aff-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
